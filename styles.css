@@ -1,0 +1,145 @@
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(
+            100deg,
+            hsl(357deg 51% 73%) 0%,
+            hsl(349deg 56% 73%) 10%,
+            hsl(341deg 59% 72%) 17%,
+            hsl(335deg 63% 72%) 24%,
+            hsl(327deg 68% 72%) 31%,
+            hsl(319deg 71% 72%) 38%,
+            hsl(312deg 75% 71%) 45%,
+            hsl(305deg 80% 71%) 52%,
+            hsl(297deg 84% 71%) 60%,
+            hsl(290deg 88% 71%) 69%,
+            hsl(282deg 92% 70%) 79%,
+            hsl(275deg 96% 70%) 100%
+    );
+}
+
+#first-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#first-page .content {
+    font-family: 'JetBrains Mono', ui-sans, sans-serif;
+}
+
+#first-page nav {
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+#first-page ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#first-page nav ul {
+    margin: 0;
+}
+
+#first-page ul li {
+    padding: 0 .4rem;
+}
+
+#first-page li a {
+    color: hsl(0 0% 25%);
+    text-decoration: none;
+}
+
+#first-page li a:hover {
+    color: hsl(0 0% 5%);
+}
+
+#first-page li a:focus-visible {
+    outline: none;
+    text-decoration: underline;
+}
+
+#external-links {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.real-name {
+    font-weight: 600;
+    font-size: 4.5rem;
+    color: hsl(0 0% 10%);
+}
+
+#parlough {
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    font-size: 1.2rem;
+    color: hsl(0 0% 20%);
+    line-height: .25;
+
+    /*text-orientation: upright;*/
+    /*font-size: .8rem;*/
+}
+
+
+@media only screen and (max-width: 42rem) {
+    #parlough {
+        writing-mode: unset;
+        transform: none;
+        display: block;
+    }
+}
+
+.section {
+    padding: 1rem;
+}
+
+.section:nth-child(even) {
+    background-color: white;
+}
+
+.section .section-header {
+    display: block;
+    font-family: 'JetBrains Mono', ui-sans, sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: hsl(0 0% 10%);
+    margin-bottom: .5rem;
+}
+
+.subsection .subsection-header {
+    display: block;
+    font-family: 'JetBrains Mono', ui-sans, sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-top: .5rem;
+    /*margin: .5rem 0;*/
+}
+
+.section .content {
+    margin: 0 1rem;
+}
+
+.section .content p {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: hsl(0 0% 10%);
+    text-align: justify;
+    margin-top: .5rem;
+}
