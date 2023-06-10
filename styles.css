@@ -1,5 +1,4 @@
-html {
-    scroll-behavior: smooth;
+:root {
     background-color: hsl(0 0% 85%);
 
     font-size: 110%;
@@ -35,7 +34,7 @@ body {
 }
 
 ::selection {
-    background-color: hsl(268deg 100% 70%);
+    background-color: hsl(268deg 99% 70%);
 }
 
 #first-page {
@@ -93,6 +92,7 @@ body {
     font-size: 1.2rem;
     color: hsl(0 0% 20%);
     line-height: .25;
+    user-select: none;
 }
 
 
