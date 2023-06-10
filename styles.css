@@ -34,6 +34,10 @@ body {
     );
 }
 
+::selection {
+    background-color: hsl(268deg 100% 70%);
+}
+
 #first-page {
     height: 100vh;
     display: flex;
